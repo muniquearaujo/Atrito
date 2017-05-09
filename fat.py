@@ -15,10 +15,10 @@ dt=0.001
 a=[0.0]
 
 
-while (t[-1]<=60):
+while (t[-1]<=300):
 	t.append(t[-1]+dt)
 	x.append(x[-1]+v[-1]*dt +0.5*a[-1]*dt**2)
-	a.append((k/m)*(-x[-1])+((-np.sign(v[-1]))*mi*gT))	
+	a.append((k/m)*(-x[-1])+((-np.sign(v[-1]))*mi*gL))	
 	v.append(v[-1]+0.5*(a[-2]+a[-1])*dt)
 
 	
